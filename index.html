@@ -5,16 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="shortcut icon" href="/source/favicon.svg" type="image/x-icon">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
   <title>Virtual healthcare for you</title>
 </head>
 
 <body>
   <nav id="navbar">
-    <img id="logo" src="./source/logo.svg" alt="Logo img">
-    <div class="burger" id="burger">
+    <img id="logo" src="img/logo.svg" alt="Logo img">
+    <div class="burger only-mobile" id="burger" title="menu">
       <div></div>
       <div></div>
       <div></div>
@@ -27,51 +30,55 @@
       <li><a href="#services">About us</a></li>
     </ul>
   </nav>
-  <header id="header">
+  <section id="header">
     <div>
       <h1>Virtual healthcare for you</h1>
       <p class="introtext">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online
         for everyone</p>
-      <button class="header-btn">Consult today</button>
+      <button>Consult today</button>
     </div>
-    <img src="/source/illustration.svg" alt="">
-    <img src="/source/element.png" alt="">
-  </header>
+    <picture>
+      <source srcset="img/sec01_illustration.avif" type="image/avif">
+      <source srcset="img/sec01_illustration.webp" type="image/webp">
+      <img src="img/sec01_illustration.png" alt="sec01_illustration">
+    </picture>
+    <img src="img/blue_dots_bg_element.svg" alt="Blue dots">
+  </section>
   <section id="services">
-    <div>
-      <h2>Our services</h2>
+    <header>
+      <h2 class="underline-element">Our services</h2>
       <p class="introtext">We provide to you the best choiches for you. Adjust it to your health needs and make sure
         your undergo treatment with our highly qualified doctors you can consult with us which type of service is
         suitable for your health</p>
-    </div>
+    </header>
     <div class="service-board">
       <div class="service-board-item">
-        <img src="./source/servicesImg1.svg">
+        <img src="img/servicesImg1.svg">
         <h3>Search doctor</h3>
         <p class="introtext">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
       </div>
       <div class="service-board-item">
-        <img src="./source/servicesImg2.svg">
+        <img src="img/servicesImg2.svg">
         <h3>Online pharmacy</h3>
         <p class="introtext">Buy your medicines with our mobile application with a simple delivery system</p>
       </div>
       <div class="service-board-item">
-        <img src="./source/servicesImg3.svg">
+        <img src="img/servicesImg3.svg">
         <h3>Consultation</h3>
         <p class="introtext">Free consultation with our trusted doctors and get the best recomendations</p>
       </div>
       <div class="service-board-item">
-        <img src="./source/servicesImg4.svg">
+        <img src="img/servicesImg4.svg">
         <h3>Details info</h3>
         <p class="introtext">Free consultation with our trusted doctors and get the best recomendations</p>
       </div>
       <div class="service-board-item">
-        <img src="./source/servicesImg5.svg">
+        <img src="img/servicesImg5.svg">
         <h3>Emergency care</h3>
         <p class="introtext">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
       </div>
       <div class="service-board-item">
-        <img src="./source/servicesImg6.svg">
+        <img src="img/servicesImg6.svg">
         <h3>Tracking</h3>
         <p class="introtext">Track and save your medical history and health data</p>
       </div>
@@ -79,33 +86,63 @@
     </div>
 
   </section>
-  <section id="providers">
-    <img src="/source/trafalgar-illustration sec02 1.svg" alt="">
+  <section id="providers" class="text-and-img reverse">
     <div>
-      <h2>Leading healthcare providers</h2>
+      <h2 class="underline-element">Leading healthcare providers</h2>
       <p class="introtext">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online
         for everyone. To us, it’s not just work. We take pride
         in the solutions we deliver</p>
       <button class="section-btn">Learn more</button>
     </div>
+    <picture>
+      <source srcset="img/sec_providers_illustration.avif" type="image/avif">
+      <source srcset="img/sec_providers_illustration.webp" type="image/webp">
+      <img src="img/sec_providers_illustration.png" alt="providers illustration">
+    </picture>
   </section>
-  <section id="apps">
+  <section id="apps" class="text-and-img">
     <div>
-      <h2>Download our mobile apps</h2>
+      <h2 class="underline-element">Download our mobile apps</h2>
       <p class="introtext">Our dedicated patient engagement app and web portal allow you to access information
         instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
-      <button class="section-btn">Download &#8595;</button>
+      <button class="section-btn icon-after icon-arrow-down">Download</button>
     </div>
-    <img src="/source/trafalgar-illustration sec03 1.svg" alt="">
+    <picture>
+      <source srcset="img/sec_apps_illustration.avif" type="image/avif">
+      <source srcset="img/sec_apps_illustration.webp" type="image/webp">
+      <img src="img/sec_apps_illustration.png" alt="apps illustration">
+    </picture>
   </section>
   <section id="testimonials">
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <h2>What our customer are saying</h2>
+          <h2 class="underline-element">What our customer are saying</h2>
           <div class="swiper-content">
             <div>
-              <img src="/source/Group 5.svg" alt="">
+              <picture>
+                <source srcset="img/sec_testimonials_avatar.avif" type="image/avif">
+                <source srcset="img/sec_testimonials_avatar.webp" type="image/webp">
+                <img src="img/sec_testimonials_avatar.png" alt="img/sec_testimonials_avatar">
+              </picture>
+              <div>
+                <h3>Edward Newgate</h3>
+                <p>Founder Circle</p>
+              </div>
+            </div>
+            <p>“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no
+              tedeous form, long calls, or administrative hassle) and securely”</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <h2 class="underline-element">What our customer are saying</h2>
+          <div class="swiper-content">
+            <div>
+              <picture>
+                <source srcset="img/sec_testimonials_avatar.avif" type="image/avif">
+                <source srcset="img/sec_testimonials_avatar.webp" type="image/webp">
+                <img src="img/sec_testimonials_avatar.png" alt="img/sec_testimonials_avatar">
+              </picture>
               <div>
                 <h3>Edward Newgate</h3>
                 <p>Founder Circle</p>
@@ -119,7 +156,11 @@
           <h2>What our customer are saying</h2>
           <div class="swiper-content">
             <div>
-              <img src="/source/Group 5.svg" alt="">
+              <picture>
+                <source srcset="img/sec_testimonials_avatar.avif" type="image/avif">
+                <source srcset="img/sec_testimonials_avatar.webp" type="image/webp">
+                <img src="img/sec_testimonials_avatar.png" alt="img/sec_testimonials_avatar">
+              </picture>
               <div>
                 <h3>Edward Newgate</h3>
                 <p>Founder Circle</p>
@@ -130,24 +171,14 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <h2>What our customer are saying</h2>
+          <h2 class="underline-element">What our customer are saying</h2>
           <div class="swiper-content">
             <div>
-              <img src="/source/Group 5.svg" alt="">
-              <div>
-                <h3>Edward Newgate</h3>
-                <p>Founder Circle</p>
-              </div>
-            </div>
-            <p>“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no
-              tedeous form, long calls, or administrative hassle) and securely”</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <h2>What our customer are saying</h2>
-          <div class="swiper-content">
-            <div>
-              <img src="/source/Group 5.svg" alt="">
+              <picture>
+                <source srcset="img/sec_testimonials_avatar.avif" type="image/avif">
+                <source srcset="img/sec_testimonials_avatar.webp" type="image/webp">
+                <img src="img/sec_testimonials_avatar.png" alt="img/sec_testimonials_avatar">
+              </picture>
               <div>
                 <h3>Edward Newgate</h3>
                 <p>Founder Circle</p>
@@ -161,70 +192,90 @@
       <!-- pagination -->
       <div class="swiper-pagination"></div>
       <!-- navigation buttons -->
-      <div class="swiper-button-prev"><img src="/source/Prev.svg" alt=""></div>
-      <div class="swiper-button-next"><img src="/source/Next.svg" alt=""></div>
+      <div class="swiper-button-prev"><img src="img/blue_arrow_left.svg" alt="prev" title="next"></div>
+      <div class="swiper-button-next"><img src="img/blue_arrow_left.svg" class="icon-arrow-right" alt="next"
+          title="prev"></div>
     </div>
   </section>
   <section id="articles">
-    <h2>Check out our latest article</h2>
+    <h2 class="underline-element">Check out our latest article</h2>
     <div class="articles-board">
       <div class="articles-item">
-        <img src="/source/Mask Group.png" alt="">
+        <picture>
+          <source srcset="img/article_01.avif" type="image/avif">
+          <source srcset="img/article_01.webp" type="image/webp">
+          <img src="img/article_01.png" alt="article_01">
+        </picture>
         <h3>Disease detection, check up in the laboratory</h3>
         <p class="introtext">In this case, the role of the health laboratory is very important to do a disease
           detection...</p>
-        <a href="#">Read more &#8594;</a>
+        <a href="#" class="icon-after icon-arrow-right" title="More articles">Read more</a>
       </div>
       <div class="articles-item">
-        <img src="/source/Mask Group2.png" alt="">
+        <picture>
+          <source srcset="img/article_02.avif" type="image/avif">
+          <source srcset="img/article_02.webp" type="image/webp">
+          <img src="img/article_02.png" alt="article_02">
+        </picture>
         <h3>Herbal medicines that are safe for consumptiony</h3>
         <p class="introtext">Herbal medicine is very widely used at this time because of its very good for your
           health...
         </p>
-        <a href="#">Read more &#8594;</a>
+        <a href="#" class="icon-after icon-arrow-right" title="More articles">Read more</a>
       </div>
       <div class="articles-item">
-        <img src="/source/Mask Group3.png" alt="">
+        <picture>
+          <source srcset="img/article_03.avif" type="image/avif">
+          <source srcset="img/article_03.webp" type="image/webp">
+          <img src="img/article_03.png" alt="article_03">
+        </picture>
         <h3>Natural care for healthy facial skin</h3>
         <p class="introtext">A healthy lifestyle should start from now and also for your skin health. There are some...
         </p>
-        <a href="#">Read more &#8594;</a>
+        <a href="#" class="icon-after icon-arrow-right" title="More articles">Read more</a>
       </div>
       <button class="section-btn">View all</button>
     </div>
   </section>
   <footer>
+    <div class="container">
+    <img src="img/blue_dots_bg_element.svg" class="bg-element" alt="bg element">
     <div>
-      <div>
-        <img src="/source/light logo.svg" alt="">
-        <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-        <p>&copy; Trafalgar PTY LTD 2020. All rights reserved</p>
-      </div>
+      <img src="img/light_logo.svg" class="logo" alt="logo">
+      <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+      <p>&copy; Trafalgar PTY LTD 2020. All rights reserved</p>
+    </div>
+    <div>
+      <header>Company</header>
       <ul>
-        <li>Company</li>
         <li><a href="#">About</a></li>
         <li><a href="#">Testimonials</a></li>
         <li><a href="#">Find a doctor</a></li>
         <li><a href="#">Apps</a></li>
       </ul>
+    </div>
+    <div>
+      <header>Region</header>
       <ul>
-        <li>Region</li>
         <li><a href="#">Indonesia</a></li>
         <li><a href="#">Singapore</a></li>
         <li><a href="#">Hongkong</a></li>
         <li><a href="#">Canada</a></li>
       </ul>
+    </div>
+    <div>
+      <header>Help</header>
       <ul>
-        <li>Help</li>
         <li><a href="#">Help center</a></li>
         <li><a href="#">Contact support</a></li>
         <li><a href="#">Instructions</a></li>
         <li><a href="#">How it works</a></li>
       </ul>
     </div>
-  </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="/js/main.js"></script>
+    </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
